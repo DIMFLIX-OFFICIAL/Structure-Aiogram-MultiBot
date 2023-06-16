@@ -1,0 +1,7 @@
+aiogram~=2.25.1
+aiohttp~=3.8.4
+typing~=3.7.4.3
+pyngrok~=6.0.0
+environs~=9.5.0
+aiosqlite~=0.19.0
+AiogramStorages~=1.0.0
