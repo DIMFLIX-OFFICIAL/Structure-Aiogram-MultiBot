@@ -81,7 +81,7 @@ def cfg(path: Optional[str] = None) -> Config:
             logging_for_bots=env.bool("LOGGING_FOR_BOTS", default=False),
             webhook_host=env.str("WEBHOOK_HOST", default='localhost'),
             webhook_port=port,
-            web_url=ngrok.connect(port).public_url if env.bool("AUTO_URL") else env.str("WEBHOOK_URL"),
+            web_url=ngrok.connect(port).public_url if env.bool("AUTO_URL") else env.str("WEB_URL"),
             webhook_path="/webhook/{bot_token}"
         )
     )
